@@ -1,5 +1,8 @@
+require 'hex'
+
 function love.draw()
-    love.graphics.print('Hello World!', 400, 300);
+    map = HexMap:new(10, 10)
+    map:draw(love.graphics, 25)
 end
 
 function love.keypressed(key)
